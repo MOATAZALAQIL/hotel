@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Variables & Design Tokens - Al-Diyafa Hotel (فندق الضيافة)
+   ========================================================================== */
+
+:root {
+  /* Colors - Luxurious Gold & Deep Navy Palette */
+  --clr-primary: #C8A456;
+  --clr-primary-dark: #A8883E;
+  --clr-primary-light: #E8D5A0;
+  --clr-secondary: #1B2A4A;
+  --clr-secondary-light: #2A3F6A;
+  --clr-bg: #FAF8F5;
+  --clr-text: #2C2C2C;
+  --clr-text-light: #6B6B6B;
+  --clr-accent: #4A7C59;
+  --clr-error: #D4453A;
+  --clr-success: #4A7C59;
+  --clr-border: #E8E4DF;
+  --clr-white: #FFFFFF;
+  --clr-overlay: rgba(27, 42, 74, 0.72);
+  --clr-card-bg: #FFFFFF;
+
+  /* Typography */
+  --font-ar: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-en-serif: 'Playfair Display', Georgia, serif;
+  --font-en-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-xxl: 6rem;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}

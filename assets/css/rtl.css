@@ -1,0 +1,27 @@
+/* ==========================================================================
+   RTL Styles - Al-Diyafa Hotel (فندق الضيافة)
+   ========================================================================== */
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .hero__search {
+  text-align: right;
+}
+
+[dir="rtl"] .form-group {
+  text-align: right;
+}
+
+[dir="rtl"] .contact-info__item {
+  text-align: right;
+}
+
+[dir="rtl"] .footer__col {
+  text-align: right;
+}
+
+[dir="rtl"] .text-center {
+  text-align: center;
+}

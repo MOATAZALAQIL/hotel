@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Responsive Styles - Al-Diyafa Hotel (فندق الضيافة)
+   ========================================================================== */
+
+@media (max-width: 991px) {
+  .navbar__menu {
+    position: fixed;
+    top: 0;
+    inset-inline-end: -100%;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--clr-secondary);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 6rem 2rem 2rem;
+    gap: 1.5rem;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+    z-index: 999;
+  }
+
+  [dir="rtl"] .navbar__menu {
+    box-shadow: 5px 0 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar__menu.active {
+    inset-inline-end: 0;
+  }
+
+  .navbar__toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  .navbar__link {
+    color: var(--clr-white) !important;
+    font-size: 1.15rem;
+  }
+
+  .hero__search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__search .btn {
+    width: 100%;
+  }
+
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-block: var(--space-xl);
+  }
+
+  .section__title {
+    font-size: 2rem;
+  }
+
+  .page-header__title {
+    font-size: 2.2rem;
+  }
+
+  .grid--2,
+  .grid--3,
+  .grid--4 {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+
+  .card__footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .card__footer .btn {
+    width: 100%;
+  }
+}

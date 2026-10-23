@@ -1,0 +1,229 @@
+{
+  "general": {
+    "hotel_name": "Al-Diyafa Hotel",
+    "currency": "SAR",
+    "location": "Riyadh, Saudi Arabia"
+  },
+  "nav": {
+    "home": "Home",
+    "rooms": "Rooms & Suites",
+    "about": "About Us",
+    "services": "Services",
+    "gallery": "Gallery",
+    "contact": "Contact Us",
+    "book_now": "Book Now"
+  },
+  "hero": {
+    "title": "Welcome to Al-Diyafa Hotel",
+    "subtitle": "Where refined luxury meets genuine Arabian hospitality in the heart of Riyadh",
+    "cta": "Book Your Stay Now",
+    "check_in": "Check-in Date",
+    "check_out": "Check-out Date",
+    "guests": "Guests",
+    "search": "Find a Room"
+  },
+  "intro": {
+    "title": "An Exceptional Stay Beyond Expectations",
+    "text": "Nestled in Riyadh's finest district, Al-Diyafa Hotel presents a modern concept of luxury and serenity. We offer our distinguished guests spacious suites, world-class dining, and holistic wellness amenities for a memorable stay whether traveling for business or leisure.",
+    "cta": "Explore Our Story"
+  },
+  "rooms": {
+    "title": "Luxury Rooms & Suites",
+    "subtitle": "Impeccably designed spaces providing the ultimate comfort and tranquility",
+    "standard": {
+      "name": "Deluxe Standard Room",
+      "desc": "A cozy, elegant retreat equipped with contemporary amenities, ideal for solo travelers or couples.",
+      "price": "450",
+      "guests": "2 Guests",
+      "size": "32 m²",
+      "bed": "King Bed"
+    },
+    "deluxe": {
+      "name": "Superior City View Room",
+      "desc": "Stunning panoramic skyline views accompanied by a comfortable lounge and premium amenities.",
+      "price": "750",
+      "guests": "2 Guests",
+      "size": "45 m²",
+      "bed": "Double King Bed"
+    },
+    "suite": {
+      "name": "Executive Suite",
+      "desc": "An expansive suite featuring a separate living room and exclusive VIP Executive Lounge access.",
+      "price": "1200",
+      "guests": "3 Guests",
+      "size": "70 m²",
+      "bed": "King Bed + Sofa Bed"
+    },
+    "royal": {
+      "name": "Royal Suite",
+      "desc": "The pinnacle of grandeur and privacy with a scenic balcony, private dining, and 24/7 butler service.",
+      "price": "2500",
+      "guests": "4 Guests",
+      "size": "130 m²",
+      "bed": "Super King Bed"
+    },
+    "family": {
+      "name": "Spacious Family Suite",
+      "desc": "Interconnecting rooms with a shared family lounge, entertainment hub, and child-friendly comforts.",
+      "price": "950",
+      "guests": "5 Guests",
+      "size": "85 m²",
+      "bed": "2 King Beds + Single"
+    },
+    "executive": {
+      "name": "Business Executive Room",
+      "desc": "A tailored productive environment with an ergonomic work desk, high-speed Wi-Fi, and refined quietness.",
+      "price": "600",
+      "guests": "2 Guests",
+      "size": "40 m²",
+      "bed": "King Bed"
+    },
+    "per_night": "/ night",
+    "view_details": "Details",
+    "book_room": "Book Room",
+    "filter_all": "All Rooms",
+    "filter_standard": "Standard",
+    "filter_deluxe": "Superior",
+    "filter_suite": "Suites"
+  },
+  "services": {
+    "title": "Refined Services & Amenities",
+    "subtitle": "Everything you desire for an inspiring stay all in one magnificent venue",
+    "restaurant": {
+      "name": "Gourmet International Restaurant",
+      "desc": "Culinary excellence featuring lavish daily buffets and authentic dishes crafted by renowned master chefs."
+    },
+    "spa": {
+      "name": "Spa & Holistic Wellness",
+      "desc": "Rejuvenating massages and natural spa therapies designed to revitalize both body and spirit."
+    },
+    "pool": {
+      "name": "Heated Outdoor Pool",
+      "desc": "Unwind under the sun in a temperature-controlled pool accompanied by refreshing poolside beverages."
+    },
+    "gym": {
+      "name": "State-of-the-Art Fitness Center",
+      "desc": "Advanced cardio and strength equipment with certified trainers available upon request."
+    },
+    "meeting": {
+      "name": "Meeting & Event Venues",
+      "desc": "Sophisticated conference spaces fitted with cutting-edge audiovisual technology for events of all scales."
+    },
+    "room_service": {
+      "name": "24/7 Room Service",
+      "desc": "An expansive in-room dining menu served promptly to your door at any hour of day or night."
+    },
+    "wifi": {
+      "name": "Complimentary Ultra-Fast Wi-Fi",
+      "desc": "Seamless, high-bandwidth wireless internet access throughout all guest rooms and public areas."
+    },
+    "parking": {
+      "name": "Secure Parking & Valet",
+      "desc": "Complimentary covered parking for guests complete with dedicated, professional valet service."
+    },
+    "concierge": {
+      "name": "Dedicated Concierge Team",
+      "desc": "Personalized assistance for flight bookings, city excursions, and luxury chauffeur services."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "A legacy of craftsmanship and distinction in luxury hospitality",
+    "story_title": "The Story of Al-Diyafa",
+    "story_text": "Our journey began with a clear aspiration: to blend legendary Arabian generosity with world-class hospitality standards. Today, Al-Diyafa stands as the premier destination for business pioneers and travelers seeking an harmonious blend of grandeur and heartfelt care.",
+    "vision_title": "Our Vision",
+    "vision_text": "To be the foremost benchmark for authentic, ultra-luxurious hospitality in the Kingdom.",
+    "mission_title": "Our Mission",
+    "mission_text": "To craft tailored experiences and heartfelt memories that exceed our guests' highest expectations.",
+    "values_title": "Our Values",
+    "values_text": "Authenticity, uncompromising quality, professionalism, and guest-first mindset.",
+    "stats": {
+      "years": "15+",
+      "years_label": "Years of Excellence",
+      "rooms_count": "180+",
+      "rooms_label": "Luxury Rooms & Suites",
+      "guests": "85k+",
+      "guests_label": "Delighted Guests",
+      "awards": "12",
+      "awards_label": "Global & Regional Awards"
+    },
+    "team_title": "Executive Leadership",
+    "team_subtitle": "Passionate professionals devoted to your supreme comfort",
+    "team": {
+      "member1": { "name": "Ahmed Al-Shammari", "role": "General Manager" },
+      "member2": { "name": "Sara Al-Qahtani", "role": "Head of Guest Experience" },
+      "member3": { "name": "Karim Abdel Rahim", "role": "Executive Head Chef" },
+      "member4": { "name": "Mona Al-Salem", "role": "Director of Operations" }
+    }
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "A visual journey across Al-Diyafa Hotel and its distinguished spaces",
+    "filter_all": "All",
+    "filter_rooms": "Rooms",
+    "filter_restaurant": "Dining",
+    "filter_pool": "Pool",
+    "filter_lobby": "Lobby",
+    "filter_exterior": "Exterior"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Our concierge and front desk are available 24/7 to attend to your every inquiry",
+    "info_title": "Contact Information",
+    "address_label": "Address",
+    "address": "King Fahd Road, Al-Olaya, Riyadh, Saudi Arabia",
+    "phone_label": "Direct Line",
+    "phone": "+966 11 234 5678",
+    "email_label": "Email Address",
+    "email": "info@aldiyafa-hotel.com",
+    "hours_label": "Working Hours",
+    "hours": "Front Desk: 24 Hours / 7 Days",
+    "form_title": "Send Us a Message",
+    "name_label": "Full Name",
+    "name_placeholder": "Enter your full name",
+    "email_input_label": "Email Address",
+    "email_placeholder": "example@domain.com",
+    "subject_label": "Subject",
+    "subject_placeholder": "Inquiry or reservation topic",
+    "message_label": "Message",
+    "message_placeholder": "Write your inquiry or message here...",
+    "send": "Send Message",
+    "success": "Thank you! Your message has been sent successfully. Our team will contact you shortly.",
+    "error_required": "This field is required",
+    "error_email": "Please enter a valid email address"
+  },
+  "testimonials": {
+    "title": "Guest Reviews",
+    "subtitle": "Hear directly from our cherished guests about their stays",
+    "t1": {
+      "text": "An outstanding stay by all measures! The staff was courteous and attentive, and the room offered complete calm and pristine cleanliness.",
+      "author": "Sultan Al-Mansour",
+      "role": "Business Executive - Riyadh"
+    },
+    "t2": {
+      "text": "An exquisitely luxurious hotel with a superb breakfast spread. Perfect location close to top dining and shopping venues.",
+      "author": "Reem Al-Abdullah",
+      "role": "Traveler - UAE"
+    },
+    "t3": {
+      "text": "Our family spent a magnificent weekend here. The swimming pool and children's amenities were top tier. We will return soon!",
+      "author": "Dr. Faisal Al-Harbi",
+      "role": "Senior Consultant - Jeddah"
+    }
+  },
+  "cta": {
+    "title": "Ready for an Unforgettable Hospitality Experience?",
+    "text": "Book your stay today at the best guaranteed rate and enjoy our bespoke amenities.",
+    "button": "Book Directly Now"
+  },
+  "footer": {
+    "description": "Al-Diyafa Hotel is your sanctuary of contemporary luxury and timeless Arabian warmth.",
+    "quick_links": "Quick Links",
+    "more_links": "More Links",
+    "contact_us": "Contact Us",
+    "address": "King Fahd Road, Riyadh",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "copyright": "© 2026 Al-Diyafa Hotel. All rights reserved."
+  }
+}

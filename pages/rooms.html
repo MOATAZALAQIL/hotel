@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الغرف والأجنحة | فندق الضيافة</title>
+  <meta name="description" content="استعرض غرف وأجنحة فندق الضيافة الفاخرة المجهزة بأرقى وسائل الراحة، إطلالات ساحرة، وأسعار تنافسية.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__container">
+      <a href="../index.html" class="navbar__logo">
+        <i class="fas fa-crown navbar__logo-icon"></i>
+        <span class="navbar__logo-text" data-i18n="general.hotel_name">فندق الضيافة</span>
+      </a>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="../index.html" class="navbar__link" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="rooms.html" class="navbar__link navbar__link--active" data-i18n="nav.rooms">الغرف والأجنحة</a></li>
+        <li><a href="about.html" class="navbar__link" data-i18n="nav.about">من نحن</a></li>
+        <li><a href="services.html" class="navbar__link" data-i18n="nav.services">الخدمات</a></li>
+        <li><a href="gallery.html" class="navbar__link" data-i18n="nav.gallery">معرض الصور</a></li>
+        <li><a href="contact.html" class="navbar__link" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <button class="navbar__lang-btn" id="langToggle" onclick="toggleLanguage()">English</button>
+        <a href="rooms.html" class="btn btn--primary btn--sm" data-i18n="nav.book_now">احجز الآن</a>
+        <button class="navbar__toggle" id="navToggle" aria-label="تبديل القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header" style="background-image: url('https://images.unsplash.com/photo-1590490360182-c33d955f4b18?w=1920&q=80&fit=crop');">
+    <div class="container">
+      <h1 class="page-header__title" data-i18n="rooms.title">الغرف والأجنحة الفاخرة</h1>
+      <div class="page-header__breadcrumb">
+        <a href="../index.html" data-i18n="nav.home">الرئيسية</a>
+        <span>/</span>
+        <span data-i18n="nav.rooms">الغرف والأجنحة</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Rooms Listing & Filters -->
+  <section class="section">
+    <div class="container">
+      <div class="gallery__filters">
+        <button class="gallery__filter-btn gallery__filter-btn--active" data-filter="all" data-i18n="rooms.filter_all">جميع الغرف</button>
+        <button class="gallery__filter-btn" data-filter="standard" data-i18n="rooms.filter_standard">قياسية</button>
+        <button class="gallery__filter-btn" data-filter="deluxe" data-i18n="rooms.filter_deluxe">سوبريور</button>
+        <button class="gallery__filter-btn" data-filter="suite" data-i18n="rooms.filter_suite">أجنحة</button>
+      </div>
+
+      <div class="grid grid--3">
+        <!-- Room 1: Standard -->
+        <article class="card gallery__item reveal" data-category="standard" style="height: auto;">
+          <div class="card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=400&fit=crop&q=80" alt="غرفة قياسية ديلوكس" class="card__img" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-i18n="rooms.standard.name">غرفة قياسية ديلوكس</h3>
+            <div class="card__meta">
+              <span><i class="fas fa-user-friends"></i> <span data-i18n="rooms.standard.guests">2 ضيوف</span></span>
+              <span><i class="fas fa-vector-square"></i> <span data-i18n="rooms.standard.size">32 م²</span></span>
+              <span><i class="fas fa-bed"></i> <span data-i18n="rooms.standard.bed">سرير كينغ</span></span>
+            </div>
+            <p class="card__text" data-i18n="rooms.standard.desc">غرفة مريحة وعصرية مجهزة بكافة سبل الراحة ومثالية للإقامات الفردية أو المزدوجة.</p>
+            <div class="card__footer">
+              <div class="card__price">
+                <span data-i18n="rooms.standard.price">450</span> <span data-i18n="general.currency">ر.س</span> <small data-i18n="rooms.per_night">/ الليلة</small>
+              </div>
+              <a href="contact.html" class="btn btn--primary btn--sm" data-i18n="rooms.book_room">احجز الغرفة</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 2: Superior / Deluxe -->
+        <article class="card gallery__item reveal" data-category="deluxe" style="height: auto;">
+          <div class="card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d955f4b18?w=600&h=400&fit=crop&q=80" alt="غرفة سوبريور بإطلالة" class="card__img" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-i18n="rooms.deluxe.name">غرفة سوبريور بإطلالة</h3>
+            <div class="card__meta">
+              <span><i class="fas fa-user-friends"></i> <span data-i18n="rooms.deluxe.guests">2 ضيوف</span></span>
+              <span><i class="fas fa-vector-square"></i> <span data-i18n="rooms.deluxe.size">45 م²</span></span>
+              <span><i class="fas fa-bed"></i> <span data-i18n="rooms.deluxe.bed">سرير كينغ مزدوج</span></span>
+            </div>
+            <p class="card__text" data-i18n="rooms.deluxe.desc">إطلالة بانورامية ساحرة على أفق المدينة مع مساحة جلوس أنيقة ومرافق فاخرة.</p>
+            <div class="card__footer">
+              <div class="card__price">
+                <span data-i18n="rooms.deluxe.price">750</span> <span data-i18n="general.currency">ر.س</span> <small data-i18n="rooms.per_night">/ الليلة</small>
+              </div>
+              <a href="contact.html" class="btn btn--primary btn--sm" data-i18n="rooms.book_room">احجز الغرفة</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 3: Suite -->
+        <article class="card gallery__item reveal" data-category="suite" style="height: auto;">
+          <div class="card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=400&fit=crop&q=80" alt="جناح تنفيذي" class="card__img" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-i18n="rooms.suite.name">جناح تنفيذي</h3>
+            <div class="card__meta">
+              <span><i class="fas fa-user-friends"></i> <span data-i18n="rooms.suite.guests">3 ضيوف</span></span>
+              <span><i class="fas fa-vector-square"></i> <span data-i18n="rooms.suite.size">70 م²</span></span>
+              <span><i class="fas fa-bed"></i> <span data-i18n="rooms.suite.bed">سرير كينغ + أريكة</span></span>
+            </div>
+            <p class="card__text" data-i18n="rooms.suite.desc">جناح متكامل يضم غرفة نوم منفصلة وصالة معيشة فاخرة مع دخول مجاني لصالة كبار الشخصيات.</p>
+            <div class="card__footer">
+              <div class="card__price">
+                <span data-i18n="rooms.suite.price">1200</span> <span data-i18n="general.currency">ر.س</span> <small data-i18n="rooms.per_night">/ الليلة</small>
+              </div>
+              <a href="contact.html" class="btn btn--primary btn--sm" data-i18n="rooms.book_room">احجز الغرفة</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 4: Royal Suite -->
+        <article class="card gallery__item reveal" data-category="suite" style="height: auto;">
+          <div class="card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=600&h=400&fit=crop&q=80" alt="الجناح الملكي" class="card__img" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-i18n="rooms.royal.name">الجناح الملكي</h3>
+            <div class="card__meta">
+              <span><i class="fas fa-user-friends"></i> <span data-i18n="rooms.royal.guests">4 ضيوف</span></span>
+              <span><i class="fas fa-vector-square"></i> <span data-i18n="rooms.royal.size">130 م²</span></span>
+              <span><i class="fas fa-bed"></i> <span data-i18n="rooms.royal.bed">سرير سوبر كينغ</span></span>
+            </div>
+            <p class="card__text" data-i18n="rooms.royal.desc">ذروة الرفاهية والخصوصية مع شرفة واسعة، غرفة طعام خاصة، وخدمة مساعد شخصي 24 ساعة.</p>
+            <div class="card__footer">
+              <div class="card__price">
+                <span data-i18n="rooms.royal.price">2500</span> <span data-i18n="general.currency">ر.س</span> <small data-i18n="rooms.per_night">/ الليلة</small>
+              </div>
+              <a href="contact.html" class="btn btn--primary btn--sm" data-i18n="rooms.book_room">احجز الغرفة</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 5: Family Room -->
+        <article class="card gallery__item reveal" data-category="suite" style="height: auto;">
+          <div class="card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&h=400&fit=crop&q=80" alt="جناح عائلي رحب" class="card__img" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-i18n="rooms.family.name">جناح عائلي رحب</h3>
+            <div class="card__meta">
+              <span><i class="fas fa-user-friends"></i> <span data-i18n="rooms.family.guests">5 ضيوف</span></span>
+              <span><i class="fas fa-vector-square"></i> <span data-i18n="rooms.family.size">85 م²</span></span>
+              <span><i class="fas fa-bed"></i> <span data-i18n="rooms.family.bed">سريرين كينغ + مفرد</span></span>
+            </div>
+            <p class="card__text" data-i18n="rooms.family.desc">غرفتان متصلتان مع صالة مشتركة ومرافق مخصصة للأطفال لقضاء أجمل الأوقات العائلية.</p>
+            <div class="card__footer">
+              <div class="card__price">
+                <span data-i18n="rooms.family.price">950</span> <span data-i18n="general.currency">ر.س</span> <small data-i18n="rooms.per_night">/ الليلة</small>
+              </div>
+              <a href="contact.html" class="btn btn--primary btn--sm" data-i18n="rooms.book_room">احجز الغرفة</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 6: Executive Room -->
+        <article class="card gallery__item reveal" data-category="standard" style="height: auto;">
+          <div class="card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=600&h=400&fit=crop&q=80" alt="غرفة رجال الأعمال" class="card__img" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-i18n="rooms.executive.name">غرفة رجال الأعمال</h3>
+            <div class="card__meta">
+              <span><i class="fas fa-user-friends"></i> <span data-i18n="rooms.executive.guests">2 ضيوف</span></span>
+              <span><i class="fas fa-vector-square"></i> <span data-i18n="rooms.executive.size">40 م²</span></span>
+              <span><i class="fas fa-bed"></i> <span data-i18n="rooms.executive.bed">سرير كينغ</span></span>
+            </div>
+            <p class="card__text" data-i18n="rooms.executive.desc">بيئة هادئة ومثالية للعمل مع مكتب مجهز، إنترنت فائق السرعة، ومرافق راقية.</p>
+            <div class="card__footer">
+              <div class="card__price">
+                <span data-i18n="rooms.executive.price">600</span> <span data-i18n="general.currency">ر.س</span> <small data-i18n="rooms.per_night">/ الليلة</small>
+              </div>
+              <a href="contact.html" class="btn btn--primary btn--sm" data-i18n="rooms.book_room">احجز الغرفة</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="general.hotel_name">فندق الضيافة</h3>
+        <p class="footer__text" data-i18n="footer.description">فندق الضيافة هو وجهتك المثالية لتجربة إقامة تجمع بين الفخامة المعاصرة والروح العربية الأصيلة.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.quick_links">روابط سريعة</h3>
+        <ul class="footer__links">
+          <li><a href="../index.html" class="footer__link" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="rooms.html" class="footer__link" data-i18n="nav.rooms">الغرف والأجنحة</a></li>
+          <li><a href="about.html" class="footer__link" data-i18n="nav.about">من نحن</a></li>
+          <li><a href="services.html" class="footer__link" data-i18n="nav.services">الخدمات</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.more_links">روابط إضافية</h3>
+        <ul class="footer__links">
+          <li><a href="gallery.html" class="footer__link" data-i18n="nav.gallery">معرض الصور</a></li>
+          <li><a href="contact.html" class="footer__link" data-i18n="nav.contact">تواصل معنا</a></li>
+          <li><a href="#" class="footer__link" data-i18n="footer.privacy">سياسة الخصوصية</a></li>
+          <li><a href="#" class="footer__link" data-i18n="footer.terms">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.contact_us">اتصل بنا</h3>
+        <div class="footer__contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span data-i18n="footer.address">شارع الملك فهد، الرياض</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+966 11 234 5678</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@aldiyafa-hotel.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p data-i18n="footer.copyright">© 2026 فندق الضيافة. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/navbar.js"></script>
+  <script src="../assets/js/slider.js"></script>
+  <script src="../assets/js/gallery.js"></script>
+  <script src="../assets/js/booking.js"></script>
+  <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

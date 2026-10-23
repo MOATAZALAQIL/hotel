@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | فندق الضيافة</title>
+  <meta name="description" content="تواصل مع إدارة فندق الضيافة في الرياض. قنوات اتصال مباشرة، حجز سريع، وموقع استراتيجي على طريق الملك فهد.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__container">
+      <a href="../index.html" class="navbar__logo">
+        <i class="fas fa-crown navbar__logo-icon"></i>
+        <span class="navbar__logo-text" data-i18n="general.hotel_name">فندق الضيافة</span>
+      </a>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="../index.html" class="navbar__link" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="rooms.html" class="navbar__link" data-i18n="nav.rooms">الغرف والأجنحة</a></li>
+        <li><a href="about.html" class="navbar__link" data-i18n="nav.about">من نحن</a></li>
+        <li><a href="services.html" class="navbar__link" data-i18n="nav.services">الخدمات</a></li>
+        <li><a href="gallery.html" class="navbar__link" data-i18n="nav.gallery">معرض الصور</a></li>
+        <li><a href="contact.html" class="navbar__link navbar__link--active" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <button class="navbar__lang-btn" id="langToggle" onclick="toggleLanguage()">English</button>
+        <a href="rooms.html" class="btn btn--primary btn--sm" data-i18n="nav.book_now">احجز الآن</a>
+        <button class="navbar__toggle" id="navToggle" aria-label="تبديل القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80&fit=crop');">
+    <div class="container">
+      <h1 class="page-header__title" data-i18n="contact.title">تواصل معنا</h1>
+      <div class="page-header__breadcrumb">
+        <a href="../index.html" data-i18n="nav.home">الرئيسية</a>
+        <span>/</span>
+        <span data-i18n="contact.title">تواصل معنا</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Details & Form -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-wrapper">
+        <!-- Info Column -->
+        <div class="contact-info reveal">
+          <h2 style="font-size: 2rem; margin-bottom: var(--space-md); color: var(--clr-secondary);" data-i18n="contact.info_title">معلومات الاتصال</h2>
+          <p style="color: var(--clr-text-light); margin-bottom: var(--space-xl);" data-i18n="contact.subtitle">
+            فريقنا متواجد على مدار الساعة لخدمتكم والإجابة على استفساراتكم وتأكيد حجوزاتكم الخاصة.
+          </p>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i class="fas fa-map-location-dot"></i></div>
+            <div class="contact-info__text">
+              <h4 data-i18n="contact.address_label">العنوان</h4>
+              <p data-i18n="contact.address">شارع الملك فهد، حي العليا، الرياض، المملكة العربية السعودية</p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i class="fas fa-phone-volume"></i></div>
+            <div class="contact-info__text">
+              <h4 data-i18n="contact.phone_label">الهاتف المباشر</h4>
+              <p dir="ltr" style="text-align: start;">+966 11 234 5678</p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i class="fas fa-envelope-open-text"></i></div>
+            <div class="contact-info__text">
+              <h4 data-i18n="contact.email_label">البريد الإلكتروني</h4>
+              <p>info@aldiyafa-hotel.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-info__text">
+              <h4 data-i18n="contact.hours_label">ساعات العمل</h4>
+              <p data-i18n="contact.hours">مكتب الاستقبال يعمل 24 ساعة يومياً</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="reveal" style="background: var(--clr-white); padding: var(--space-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border: 1px solid var(--clr-border);">
+          <h2 style="font-size: 1.8rem; margin-bottom: var(--space-md); color: var(--clr-secondary);" data-i18n="contact.form_title">أرسل لنا استفسارك</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label class="form-group__label" for="name" data-i18n="contact.name_label">الاسم الكامل</label>
+              <input type="text" id="name" class="form-control" data-i18n-placeholder="contact.name_placeholder" placeholder="أدخل اسمك الكريم" required>
+              <span class="form-group__error" data-i18n="contact.error_required">هذا الحقل مطلوب</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-group__label" for="email" data-i18n="contact.email_input_label">البريد الإلكتروني</label>
+              <input type="email" id="email" class="form-control" data-i18n-placeholder="contact.email_placeholder" placeholder="example@domain.com" required>
+              <span class="form-group__error" data-i18n="contact.error_email">يرجى إدخال عنوان بريد إلكتروني صحيح</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-group__label" for="subject" data-i18n="contact.subject_label">الموضوع</label>
+              <input type="text" id="subject" class="form-control" data-i18n-placeholder="contact.subject_placeholder" placeholder="موضوع الرسالة أو الحجز" required>
+              <span class="form-group__error" data-i18n="contact.error_required">هذا الحقل مطلوب</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-group__label" for="message" data-i18n="contact.message_label">الرسالة</label>
+              <textarea id="message" class="form-control" rows="5" data-i18n-placeholder="contact.message_placeholder" placeholder="اكتب استفسارك أو طلبك هنا..." required></textarea>
+              <span class="form-group__error" data-i18n="contact.error_required">هذا الحقل مطلوب</span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;" data-i18n="contact.send">إرسال الرسالة</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Map Section -->
+  <section class="section section--alt" style="padding-top: 0;">
+    <div class="container reveal">
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115935.5398242408!2d46.60334800624003!3d24.759902633096307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade" 
+          title="موقع فندق الضيافة">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="general.hotel_name">فندق الضيافة</h3>
+        <p class="footer__text" data-i18n="footer.description">فندق الضيافة هو وجهتك المثالية لتجربة إقامة تجمع بين الفخامة المعاصرة والروح العربية الأصيلة.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.quick_links">روابط سريعة</h3>
+        <ul class="footer__links">
+          <li><a href="../index.html" class="footer__link" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="rooms.html" class="footer__link" data-i18n="nav.rooms">الغرف والأجنحة</a></li>
+          <li><a href="about.html" class="footer__link" data-i18n="nav.about">من نحن</a></li>
+          <li><a href="services.html" class="footer__link" data-i18n="nav.services">الخدمات</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.more_links">روابط إضافية</h3>
+        <ul class="footer__links">
+          <li><a href="gallery.html" class="footer__link" data-i18n="nav.gallery">معرض الصور</a></li>
+          <li><a href="contact.html" class="footer__link" data-i18n="nav.contact">تواصل معنا</a></li>
+          <li><a href="#" class="footer__link" data-i18n="footer.privacy">سياسة الخصوصية</a></li>
+          <li><a href="#" class="footer__link" data-i18n="footer.terms">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.contact_us">اتصل بنا</h3>
+        <div class="footer__contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span data-i18n="footer.address">شارع الملك فهد، الرياض</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+966 11 234 5678</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@aldiyafa-hotel.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p data-i18n="footer.copyright">© 2026 فندق الضيافة. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/navbar.js"></script>
+  <script src="../assets/js/slider.js"></script>
+  <script src="../assets/js/gallery.js"></script>
+  <script src="../assets/js/booking.js"></script>
+  <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

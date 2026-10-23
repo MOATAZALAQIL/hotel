@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Base Styles & Reset - Al-Diyafa Hotel (فندق الضيافة)
+   ========================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-en-sans);
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* RTL / Arabic Typography */
+[dir="rtl"] body,
+[lang="ar"] body {
+  font-family: var(--font-ar);
+}
+
+h1, h2 {
+  font-family: var(--font-en-serif);
+  font-weight: 700;
+  color: var(--clr-secondary);
+  line-height: 1.3;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2 {
+  font-family: var(--font-ar);
+  font-weight: 800;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--clr-secondary);
+  line-height: 1.4;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}

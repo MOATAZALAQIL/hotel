@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Layout Styles - Al-Diyafa Hotel (فندق الضيافة)
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: var(--space-md);
+}
+
+.section {
+  padding-block: var(--space-xxl);
+  position: relative;
+}
+
+.section--alt {
+  background-color: var(--clr-white);
+}
+
+.section--dark {
+  background-color: var(--clr-secondary);
+  color: var(--clr-white);
+}
+
+.section--dark h1,
+.section--dark h2,
+.section--dark h3,
+.section--dark h4 {
+  color: var(--clr-white);
+}
+
+.section__header {
+  text-align: center;
+  max-width: 700px;
+  margin-inline: auto;
+  margin-bottom: var(--space-xl);
+}
+
+.section__title {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+  position: relative;
+}
+
+.section__title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--clr-primary);
+  margin: var(--space-sm) auto 0;
+  border-radius: var(--radius-full);
+}
+
+.section__subtitle {
+  font-size: 1.1rem;
+  color: var(--clr-text-light);
+}
+
+.section--dark .section__subtitle {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Grids */
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--auto {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}

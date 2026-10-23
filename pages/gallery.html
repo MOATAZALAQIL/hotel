@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>معرض الصور | فندق الضيافة</title>
+  <meta name="description" content="شاهد صور فندق الضيافة الفاخر: الغرف والأجنحة، المطاعم، المسبح، اللوبي الخلاب والتصميم المعماري الحديث.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__container">
+      <a href="../index.html" class="navbar__logo">
+        <i class="fas fa-crown navbar__logo-icon"></i>
+        <span class="navbar__logo-text" data-i18n="general.hotel_name">فندق الضيافة</span>
+      </a>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="../index.html" class="navbar__link" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="rooms.html" class="navbar__link" data-i18n="nav.rooms">الغرف والأجنحة</a></li>
+        <li><a href="about.html" class="navbar__link" data-i18n="nav.about">من نحن</a></li>
+        <li><a href="services.html" class="navbar__link" data-i18n="nav.services">الخدمات</a></li>
+        <li><a href="gallery.html" class="navbar__link navbar__link--active" data-i18n="nav.gallery">معرض الصور</a></li>
+        <li><a href="contact.html" class="navbar__link" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <button class="navbar__lang-btn" id="langToggle" onclick="toggleLanguage()">English</button>
+        <a href="rooms.html" class="btn btn--primary btn--sm" data-i18n="nav.book_now">احجز الآن</a>
+        <button class="navbar__toggle" id="navToggle" aria-label="تبديل القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1920&q=80&fit=crop');">
+    <div class="container">
+      <h1 class="page-header__title" data-i18n="gallery.title">معرض الصور</h1>
+      <div class="page-header__breadcrumb">
+        <a href="../index.html" data-i18n="nav.home">الرئيسية</a>
+        <span>/</span>
+        <span data-i18n="gallery.title">معرض الصور</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gallery Section -->
+  <section class="section">
+    <div class="container">
+      <div class="gallery__filters">
+        <button class="gallery__filter-btn gallery__filter-btn--active" data-filter="all" data-i18n="gallery.filter_all">الكل</button>
+        <button class="gallery__filter-btn" data-filter="rooms" data-i18n="gallery.filter_rooms">الغرف</button>
+        <button class="gallery__filter-btn" data-filter="restaurant" data-i18n="gallery.filter_restaurant">المطعم</button>
+        <button class="gallery__filter-btn" data-filter="pool" data-i18n="gallery.filter_pool">المسبح</button>
+        <button class="gallery__filter-btn" data-filter="lobby" data-i18n="gallery.filter_lobby">اللوبي</button>
+        <button class="gallery__filter-btn" data-filter="exterior" data-i18n="gallery.filter_exterior">الخارج</button>
+      </div>
+
+      <div class="gallery__grid">
+        <!-- 1: Room -->
+        <div class="gallery__item reveal" data-category="rooms">
+          <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop&q=80" alt="غرفة قياسية" loading="lazy">
+          <div class="gallery__item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 2: Exterior -->
+        <div class="gallery__item reveal" data-category="exterior">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop&q=80" alt="واجهة الفندق ليلاً" loading="lazy">
+          <div class="gallery__item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 3: Restaurant -->
+        <div class="gallery__item reveal" data-category="restaurant">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop&q=80" alt="مطعم الفندق" loading="lazy">
+          <div class="gallery__item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 4: Pool -->
+        <div class="gallery__item reveal" data-category="pool">
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=600&fit=crop&q=80" alt="المسبح الخارجي" loading="lazy">
+          <div class="gallery__item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 5: Lobby -->
+        <div class="gallery__item reveal" data-category="lobby">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&h=600&fit=crop&q=80" alt="بهو الفندق الرئيسي" loading="lazy">
+          <div class="gallery__item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 6: Room Deluxe -->
+        <div class="gallery__item reveal" data-category="rooms">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d955f4b18?w=800&h=600&fit=crop&q=80" alt="غرفة ديلوكس فاخرة" loading="lazy">
+          <div class="gallery__item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 7: Restaurant Table -->
+        <div class="gallery__item reveal" data-category="restaurant">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&h=600&fit=crop&q=80" alt="طاولة عشاء فاخرة" loading="lazy">
+          <div class="gallery__item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 8: Suite -->
+        <div class="gallery__item reveal" data-category="rooms">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop&q=80" alt="جناح فاخر" loading="lazy">
+          <div class="gallery__item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 9: Lobby Lounge -->
+        <div class="gallery__item reveal" data-category="lobby">
+          <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=800&h=600&fit=crop&q=80" alt="ردهة الاستقبال" loading="lazy">
+          <div class="gallery__item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 10: Exterior Sunset -->
+        <div class="gallery__item reveal" data-category="exterior">
+          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop&q=80" alt="الفندق وقت الغروب" loading="lazy">
+          <div class="gallery__item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 11: Pool Relaxation -->
+        <div class="gallery__item reveal" data-category="pool">
+          <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&h=600&fit=crop&q=80" alt="منطقة الاسترخاء بالمسبح" loading="lazy">
+          <div class="gallery__item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+
+        <!-- 12: Royal Suite Bed -->
+        <div class="gallery__item reveal" data-category="rooms">
+          <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=600&fit=crop&q=80" alt="الجناح الملكي" loading="lazy">
+          <div class="gallery__item-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose" aria-label="إغلاق"><i class="fas fa-times"></i></button>
+    <button class="lightbox__prev" id="lightboxPrev" aria-label="السابق"><i class="fas fa-chevron-right"></i></button>
+    <button class="lightbox__next" id="lightboxNext" aria-label="التالي"><i class="fas fa-chevron-left"></i></button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="general.hotel_name">فندق الضيافة</h3>
+        <p class="footer__text" data-i18n="footer.description">فندق الضيافة هو وجهتك المثالية لتجربة إقامة تجمع بين الفخامة المعاصرة والروح العربية الأصيلة.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.quick_links">روابط سريعة</h3>
+        <ul class="footer__links">
+          <li><a href="../index.html" class="footer__link" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="rooms.html" class="footer__link" data-i18n="nav.rooms">الغرف والأجنحة</a></li>
+          <li><a href="about.html" class="footer__link" data-i18n="nav.about">من نحن</a></li>
+          <li><a href="services.html" class="footer__link" data-i18n="nav.services">الخدمات</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.more_links">روابط إضافية</h3>
+        <ul class="footer__links">
+          <li><a href="gallery.html" class="footer__link" data-i18n="nav.gallery">معرض الصور</a></li>
+          <li><a href="contact.html" class="footer__link" data-i18n="nav.contact">تواصل معنا</a></li>
+          <li><a href="#" class="footer__link" data-i18n="footer.privacy">سياسة الخصوصية</a></li>
+          <li><a href="#" class="footer__link" data-i18n="footer.terms">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.contact_us">اتصل بنا</h3>
+        <div class="footer__contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span data-i18n="footer.address">شارع الملك فهد، الرياض</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+966 11 234 5678</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@aldiyafa-hotel.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p data-i18n="footer.copyright">© 2026 فندق الضيافة. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/navbar.js"></script>
+  <script src="../assets/js/slider.js"></script>
+  <script src="../assets/js/gallery.js"></script>
+  <script src="../assets/js/booking.js"></script>
+  <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

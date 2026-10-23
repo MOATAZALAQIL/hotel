@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فندق الضيافة | Al-Diyafa Luxury Hotel</title>
+  <meta name="description" content="فندق الضيافة - أرقى معايير الضيافة العربية الفاخرة في قلب الرياض. غرف وأجنحة فاخرة، مطاعم عالمية ومرافق استجمام راقية.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__container">
+      <a href="index.html" class="navbar__logo">
+        <i class="fas fa-crown navbar__logo-icon"></i>
+        <span class="navbar__logo-text" data-i18n="general.hotel_name">فندق الضيافة</span>
+      </a>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="index.html" class="navbar__link navbar__link--active" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="pages/rooms.html" class="navbar__link" data-i18n="nav.rooms">الغرف والأجنحة</a></li>
+        <li><a href="pages/about.html" class="navbar__link" data-i18n="nav.about">من نحن</a></li>
+        <li><a href="pages/services.html" class="navbar__link" data-i18n="nav.services">الخدمات</a></li>
+        <li><a href="pages/gallery.html" class="navbar__link" data-i18n="nav.gallery">معرض الصور</a></li>
+        <li><a href="pages/contact.html" class="navbar__link" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <button class="navbar__lang-btn" id="langToggle" onclick="toggleLanguage()">English</button>
+        <a href="pages/rooms.html" class="btn btn--primary btn--sm" data-i18n="nav.book_now">احجز الآن</a>
+        <button class="navbar__toggle" id="navToggle" aria-label="تبديل القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80&fit=crop');">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title" data-i18n="hero.title">مرحباً بكم في فندق الضيافة</h1>
+      <p class="hero__subtitle" data-i18n="hero.subtitle">حيث تلتقي الفخامة الراقية بأصالة وكرم الضيافة العربية في قلب العاصمة</p>
+      <a href="pages/rooms.html" class="btn btn--primary btn--lg" data-i18n="hero.cta">احجز إقامتك الآن</a>
+
+      <!-- Quick Search Bar -->
+      <form class="hero__search">
+        <div class="form-group">
+          <label class="form-group__label" for="checkIn" data-i18n="hero.check_in">تاريخ الوصول</label>
+          <input type="date" class="form-control" id="checkIn" required>
+        </div>
+        <div class="form-group">
+          <label class="form-group__label" for="checkOut" data-i18n="hero.check_out">تاريخ المغادرة</label>
+          <input type="date" class="form-control" id="checkOut" required>
+        </div>
+        <div class="form-group">
+          <label class="form-group__label" for="guests" data-i18n="hero.guests">عدد الضيوف</label>
+          <select class="form-control" id="guests">
+            <option value="1">1 ضيف</option>
+            <option value="2" selected>2 ضيوف</option>
+            <option value="3">3 ضيوف</option>
+            <option value="4">4 ضيوف</option>
+            <option value="5">5+ ضيوف</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn--primary" data-i18n="hero.search">بحث عن غرفة</button>
+        </div>
+      </form>
+    </div>
+  </header>
+
+  <!-- Intro Section -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="intro reveal">
+        <div class="intro__img">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80&fit=crop" alt="بهو فندق الضيافة" loading="lazy">
+        </div>
+        <div class="intro__content">
+          <h2 class="intro__title" data-i18n="intro.title">تجربة ضيافة استثنائية تفوق التوقعات</h2>
+          <p class="intro__text" data-i18n="intro.text">
+            يقع فندق الضيافة في أرقى أحياء الرياض، مقدماً مفهوماً عصرياً للفخامة والراحة. نوفر لضيوفنا أجنحة رحبة، ومطاعم رفيعة المستوى، ومرافق عافية متكاملة لضمان إقامة مريحة ولا تُنسى سواء لأغراض العمل أو الاستجمام.
+          </p>
+          <a href="pages/about.html" class="btn btn--outline" data-i18n="intro.cta">اكتشف قصة الفندق</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Rooms -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header reveal">
+        <h2 class="section__title" data-i18n="rooms.title">الغرف والأجنحة الفاخرة</h2>
+        <p class="section__subtitle" data-i18n="rooms.subtitle">مساحات صُممت بعناية فائقة لتمنحك أقصى درجات الراحة والهدوء</p>
+      </div>
+
+      <div class="grid grid--3">
+        <!-- Room 1 -->
+        <article class="card reveal">
+          <div class="card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=400&fit=crop&q=80" alt="غرفة قياسية ديلوكس" class="card__img" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-i18n="rooms.standard.name">غرفة قياسية ديلوكس</h3>
+            <div class="card__meta">
+              <span><i class="fas fa-user-friends"></i> <span data-i18n="rooms.standard.guests">2 ضيوف</span></span>
+              <span><i class="fas fa-vector-square"></i> <span data-i18n="rooms.standard.size">32 م²</span></span>
+              <span><i class="fas fa-bed"></i> <span data-i18n="rooms.standard.bed">سرير كينغ</span></span>
+            </div>
+            <p class="card__text" data-i18n="rooms.standard.desc">غرفة مريحة وعصرية مجهزة بكافة سبل الراحة ومثالية للإقامات الفردية أو المزدوجة.</p>
+            <div class="card__footer">
+              <div class="card__price">
+                <span data-i18n="rooms.standard.price">450</span> <span data-i18n="general.currency">ر.س</span> <small data-i18n="rooms.per_night">/ الليلة</small>
+              </div>
+              <a href="pages/rooms.html" class="btn btn--primary btn--sm" data-i18n="rooms.book_room">احجز الغرفة</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 2 -->
+        <article class="card reveal">
+          <div class="card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d955f4b18?w=600&h=400&fit=crop&q=80" alt="غرفة سوبريور بإطلالة" class="card__img" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-i18n="rooms.deluxe.name">غرفة سوبريور بإطلالة</h3>
+            <div class="card__meta">
+              <span><i class="fas fa-user-friends"></i> <span data-i18n="rooms.deluxe.guests">2 ضيوف</span></span>
+              <span><i class="fas fa-vector-square"></i> <span data-i18n="rooms.deluxe.size">45 م²</span></span>
+              <span><i class="fas fa-bed"></i> <span data-i18n="rooms.deluxe.bed">سرير كينغ مزدوج</span></span>
+            </div>
+            <p class="card__text" data-i18n="rooms.deluxe.desc">إطلالة بانورامية ساحرة على أفق المدينة مع مساحة جلوس أنيقة ومرافق فاخرة.</p>
+            <div class="card__footer">
+              <div class="card__price">
+                <span data-i18n="rooms.deluxe.price">750</span> <span data-i18n="general.currency">ر.س</span> <small data-i18n="rooms.per_night">/ الليلة</small>
+              </div>
+              <a href="pages/rooms.html" class="btn btn--primary btn--sm" data-i18n="rooms.book_room">احجز الغرفة</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room 3 -->
+        <article class="card reveal">
+          <div class="card__img-wrapper">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=400&fit=crop&q=80" alt="جناح تنفيذي" class="card__img" loading="lazy">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-i18n="rooms.suite.name">جناح تنفيذي</h3>
+            <div class="card__meta">
+              <span><i class="fas fa-user-friends"></i> <span data-i18n="rooms.suite.guests">3 ضيوف</span></span>
+              <span><i class="fas fa-vector-square"></i> <span data-i18n="rooms.suite.size">70 م²</span></span>
+              <span><i class="fas fa-bed"></i> <span data-i18n="rooms.suite.bed">سرير كينغ + أريكة</span></span>
+            </div>
+            <p class="card__text" data-i18n="rooms.suite.desc">جناح متكامل يضم غرفة نوم منفصلة وصالة معيشة فاخرة مع دخول مجاني لصالة كبار الشخصيات.</p>
+            <div class="card__footer">
+              <div class="card__price">
+                <span data-i18n="rooms.suite.price">1200</span> <span data-i18n="general.currency">ر.س</span> <small data-i18n="rooms.per_night">/ الليلة</small>
+              </div>
+              <a href="pages/rooms.html" class="btn btn--primary btn--sm" data-i18n="rooms.book_room">احجز الغرفة</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align: center; margin-top: var(--space-xl);">
+        <a href="pages/rooms.html" class="btn btn--outline" data-i18n="rooms.filter_all">عرض جميع الغرف والأجنحة</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Services -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section__header reveal">
+        <h2 class="section__title" data-i18n="services.title">خدمات ومرافق راقية</h2>
+        <p class="section__subtitle" data-i18n="services.subtitle">كل ما تحتاجه لإقامة ممتعة متكاملة تحت سقف واحد</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="card service-card reveal" style="background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.1);">
+          <div class="service-card__icon"><i class="fas fa-utensils"></i></div>
+          <h3 class="service-card__title" style="color: var(--clr-white);" data-i18n="services.restaurant.name">المطعم العربي والعالمي</h3>
+          <p class="service-card__text" style="color: rgba(255, 255, 255, 0.75);" data-i18n="services.restaurant.desc">تجارب تذوق لا مثيل لها وبوفيه مفتوح يومي يقدم أشهى الأطباق المحضرة بأيدي طهاة عالميين.</p>
+        </div>
+
+        <div class="card service-card reveal" style="background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.1);">
+          <div class="service-card__icon"><i class="fas fa-spa"></i></div>
+          <h3 class="service-card__title" style="color: var(--clr-white);" data-i18n="services.spa.name">السبا ومركز العافية</h3>
+          <p class="service-card__text" style="color: rgba(255, 255, 255, 0.75);" data-i18n="services.spa.desc">جلسات تدليك وعلاجات استرخاء طبيعية لإعادة الحيوية والنشاط لجسدك وذهنك.</p>
+        </div>
+
+        <div class="card service-card reveal" style="background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.1);">
+          <div class="service-card__icon"><i class="fas fa-swimming-pool"></i></div>
+          <h3 class="service-card__title" style="color: var(--clr-white);" data-i18n="services.pool.name">مسبح خارجي مدفأ</h3>
+          <p class="service-card__text" style="color: rgba(255, 255, 255, 0.75);" data-i18n="services.pool.desc">استمتع بالسباحة والاسترخاء تحت أشعة الشمس مع إطلالة مفتوحة ومشروبات منعشة.</p>
+        </div>
+
+        <div class="card service-card reveal" style="background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.1);">
+          <div class="service-card__icon"><i class="fas fa-dumbbell"></i></div>
+          <h3 class="service-card__title" style="color: var(--clr-white);" data-i18n="services.gym.name">نادي رياضي متكامل</h3>
+          <p class="service-card__text" style="color: rgba(255, 255, 255, 0.75);" data-i18n="services.gym.desc">أحدث المعدات الرياضية وأجهزة اللياقة البدنية بإشراف مدربين مؤهلين.</p>
+        </div>
+
+        <div class="card service-card reveal" style="background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.1);">
+          <div class="service-card__icon"><i class="fas fa-wifi"></i></div>
+          <h3 class="service-card__title" style="color: var(--clr-white);" data-i18n="services.wifi.name">إنترنت عالي السرعة مجاناً</h3>
+          <p class="service-card__text" style="color: rgba(255, 255, 255, 0.75);" data-i18n="services.wifi.desc">تغطية واي فاي سريعة ومجانية في جميع أنحاء ومرافق الفندق.</p>
+        </div>
+
+        <div class="card service-card reveal" style="background: rgba(255, 255, 255, 0.05); border-color: rgba(255, 255, 255, 0.1);">
+          <div class="service-card__icon"><i class="fas fa-concierge-bell"></i></div>
+          <h3 class="service-card__title" style="color: var(--clr-white);" data-i18n="services.room_service.name">خدمة الغرف 24/7</h3>
+          <p class="service-card__text" style="color: rgba(255, 255, 255, 0.75);" data-i18n="services.room_service.desc">قائمة طعام شاملة وخدمة سريعة في غرفتك على مدار الساعة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header reveal">
+        <h2 class="section__title" data-i18n="testimonials.title">انطباعات ضيوفنا الكرام</h2>
+        <p class="section__subtitle" data-i18n="testimonials.subtitle">ما يقوله عملاؤنا عن تجربتهم في فندق الضيافة</p>
+      </div>
+
+      <div class="testimonials__slider reveal">
+        <div class="testimonials__track">
+          <!-- Slide 1 -->
+          <div class="testimonials__slide">
+            <div class="testimonials__quote-icon"><i class="fas fa-quote-right"></i></div>
+            <p class="testimonials__text" data-i18n="testimonials.t1.text">"تجربة إقامة استثنائية بكل المقاييس! الطاقم محترف وودود للغاية، والغرفة كانت في قمة النظافة والهدوء."</p>
+            <h4 class="testimonials__author" data-i18n="testimonials.t1.author">سلطان المنصور</h4>
+            <span class="testimonials__role" data-i18n="testimonials.t1.role">رجل أعمال - الرياض</span>
+          </div>
+          <!-- Slide 2 -->
+          <div class="testimonials__slide">
+            <div class="testimonials__quote-icon"><i class="fas fa-quote-right"></i></div>
+            <p class="testimonials__text" data-i18n="testimonials.t2.text">"فندق راقي جداً ووجبة الإفطار كانت لذيذة ومتنوعة. الموقع ممتاز وقريب من جميع المراكز التجارية."</p>
+            <h4 class="testimonials__author" data-i18n="testimonials.t2.author">ريم العبدالله</h4>
+            <span class="testimonials__role" data-i18n="testimonials.t2.role">سائحة - الإمارات</span>
+          </div>
+          <!-- Slide 3 -->
+          <div class="testimonials__slide">
+            <div class="testimonials__quote-icon"><i class="fas fa-quote-right"></i></div>
+            <p class="testimonials__text" data-i18n="testimonials.t3.text">"قضينا عطلة نهاية أسبوع رائعة كعائلة. المسبح ومرافق الأطفال كانت ممتازة وسنكرر الزيارة بالتأكيد."</p>
+            <h4 class="testimonials__author" data-i18n="testimonials.t3.author">د. فيصل الحربي</h4>
+            <span class="testimonials__role" data-i18n="testimonials.t3.role">طبيب استشاري - جدة</span>
+          </div>
+        </div>
+        <div class="testimonials__dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <section class="cta-section" style="background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&q=80&fit=crop');">
+    <div class="container reveal">
+      <h2 class="cta-section__title" data-i18n="cta.title">هل أنت مستعد لتجربة ضيافة لا تُنسى؟</h2>
+      <p class="cta-section__text" data-i18n="cta.text">احجز إقامتك الآن بأفضل الأسعار المضمونة واستمتع بخدماتنا الحصرية.</p>
+      <a href="pages/rooms.html" class="btn btn--primary btn--lg" data-i18n="cta.button">احجز الآن مباشرة</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="general.hotel_name">فندق الضيافة</h3>
+        <p class="footer__text" data-i18n="footer.description">فندق الضيافة هو وجهتك المثالية لتجربة إقامة تجمع بين الفخامة المعاصرة والروح العربية الأصيلة.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.quick_links">روابط سريعة</h3>
+        <ul class="footer__links">
+          <li><a href="index.html" class="footer__link" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="pages/rooms.html" class="footer__link" data-i18n="nav.rooms">الغرف والأجنحة</a></li>
+          <li><a href="pages/about.html" class="footer__link" data-i18n="nav.about">من نحن</a></li>
+          <li><a href="pages/services.html" class="footer__link" data-i18n="nav.services">الخدمات</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.more_links">روابط إضافية</h3>
+        <ul class="footer__links">
+          <li><a href="pages/gallery.html" class="footer__link" data-i18n="nav.gallery">معرض الصور</a></li>
+          <li><a href="pages/contact.html" class="footer__link" data-i18n="nav.contact">تواصل معنا</a></li>
+          <li><a href="#" class="footer__link" data-i18n="footer.privacy">سياسة الخصوصية</a></li>
+          <li><a href="#" class="footer__link" data-i18n="footer.terms">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.contact_us">اتصل بنا</h3>
+        <div class="footer__contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span data-i18n="footer.address">شارع الملك فهد، الرياض</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+966 11 234 5678</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@aldiyafa-hotel.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p data-i18n="footer.copyright">© 2026 فندق الضيافة. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/slider.js"></script>
+  <script src="assets/js/gallery.js"></script>
+  <script src="assets/js/booking.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

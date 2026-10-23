@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الخدمات والمرافق | فندق الضيافة</title>
+  <meta name="description" content="اكتشف خدمات ومرافق فندق الضيافة الفاخرة: مطاعم عالمية، سبا ومركز صحي، مسبح خارجي، ونادي رياضي متكامل.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/variables.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar__container">
+      <a href="../index.html" class="navbar__logo">
+        <i class="fas fa-crown navbar__logo-icon"></i>
+        <span class="navbar__logo-text" data-i18n="general.hotel_name">فندق الضيافة</span>
+      </a>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="../index.html" class="navbar__link" data-i18n="nav.home">الرئيسية</a></li>
+        <li><a href="rooms.html" class="navbar__link" data-i18n="nav.rooms">الغرف والأجنحة</a></li>
+        <li><a href="about.html" class="navbar__link" data-i18n="nav.about">من نحن</a></li>
+        <li><a href="services.html" class="navbar__link navbar__link--active" data-i18n="nav.services">الخدمات</a></li>
+        <li><a href="gallery.html" class="navbar__link" data-i18n="nav.gallery">معرض الصور</a></li>
+        <li><a href="contact.html" class="navbar__link" data-i18n="nav.contact">تواصل معنا</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <button class="navbar__lang-btn" id="langToggle" onclick="toggleLanguage()">English</button>
+        <a href="rooms.html" class="btn btn--primary btn--sm" data-i18n="nav.book_now">احجز الآن</a>
+        <button class="navbar__toggle" id="navToggle" aria-label="تبديل القائمة">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header" style="background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&q=80&fit=crop');">
+    <div class="container">
+      <h1 class="page-header__title" data-i18n="services.title">خدمات ومرافق راقية</h1>
+      <div class="page-header__breadcrumb">
+        <a href="../index.html" data-i18n="nav.home">الرئيسية</a>
+        <span>/</span>
+        <span data-i18n="nav.services">الخدمات</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- All Services Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid--3">
+        <!-- Service 1 -->
+        <div class="card service-card reveal">
+          <div class="service-card__icon"><i class="fas fa-utensils"></i></div>
+          <h3 class="service-card__title" data-i18n="services.restaurant.name">المطعم العربي والعالمي</h3>
+          <p class="service-card__text" data-i18n="services.restaurant.desc">تجارب تذوق لا مثيل لها وبوفيه مفتوح يومي يقدم أشهى الأطباق المحضرة بأيدي طهاة عالميين.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="card service-card reveal">
+          <div class="service-card__icon"><i class="fas fa-spa"></i></div>
+          <h3 class="service-card__title" data-i18n="services.spa.name">السبا ومركز العافية</h3>
+          <p class="service-card__text" data-i18n="services.spa.desc">جلسات تدليك وعلاجات استرخاء طبيعية لإعادة الحيوية والنشاط لجسدك وذهنك.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="card service-card reveal">
+          <div class="service-card__icon"><i class="fas fa-swimming-pool"></i></div>
+          <h3 class="service-card__title" data-i18n="services.pool.name">مسبح خارجي مدفأ</h3>
+          <p class="service-card__text" data-i18n="services.pool.desc">استمتع بالسباحة والاسترخاء تحت أشعة الشمس مع إطلالة مفتوحة ومشروبات منعشة.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="card service-card reveal">
+          <div class="service-card__icon"><i class="fas fa-dumbbell"></i></div>
+          <h3 class="service-card__title" data-i18n="services.gym.name">نادي رياضي متكامل</h3>
+          <p class="service-card__text" data-i18n="services.gym.desc">أحدث المعدات الرياضية وأجهزة اللياقة البدنية بإشراف مدربين مؤهلين.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="card service-card reveal">
+          <div class="service-card__icon"><i class="fas fa-users-rectangle"></i></div>
+          <h3 class="service-card__title" data-i18n="services.meeting.name">قاعات فعاليات واجتماعات</h3>
+          <p class="service-card__text" data-i18n="services.meeting.desc">قاعات عصرية مجهزة بأحدث تقنيات العرض والصوت لإنجاح مؤتمراتك ومناسباتك.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="card service-card reveal">
+          <div class="service-card__icon"><i class="fas fa-concierge-bell"></i></div>
+          <h3 class="service-card__title" data-i18n="services.room_service.name">خدمة الغرف 24/7</h3>
+          <p class="service-card__text" data-i18n="services.room_service.desc">قائمة طعام شاملة وخدمة سريعة في غرفتك على مدار الساعة.</p>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="card service-card reveal">
+          <div class="service-card__icon"><i class="fas fa-wifi"></i></div>
+          <h3 class="service-card__title" data-i18n="services.wifi.name">إنترنت عالي السرعة مجاناً</h3>
+          <p class="service-card__text" data-i18n="services.wifi.desc">تغطية واي فاي سريعة ومجانية في جميع أنحاء ومرافق الفندق.</p>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="card service-card reveal">
+          <div class="service-card__icon"><i class="fas fa-car-side"></i></div>
+          <h3 class="service-card__title" data-i18n="services.parking.name">موقف سيارات وخدمة صف</h3>
+          <p class="service-card__text" data-i18n="services.parking.desc">مواقف خاصة وآمنة مجانية للنزلاء مع خدمة صف السيارات الاحترافية.</p>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="card service-card reveal">
+          <div class="service-card__icon"><i class="fas fa-bell-concierge"></i></div>
+          <h3 class="service-card__title" data-i18n="services.concierge.name">خدمة الكونسيرج الخاصة</h3>
+          <p class="service-card__text" data-i18n="services.concierge.desc">مساعدتكم في حجوزات الطيران، الجولات السياحية، وتأجير السيارات.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Tabs for Detailed Experiences -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header reveal">
+        <h2 class="section__title">تجارب حصرية للنزلاء</h2>
+        <p class="section__subtitle">استكشف أدق التفاصيل حول أبرز مرافقنا وخدماتنا المخصصة لراحتكم</p>
+      </div>
+
+      <div class="tabs reveal">
+        <div class="tabs__nav">
+          <button class="tabs__btn tabs__btn--active" data-tab="dining" data-i18n="services.restaurant.name">المطعم العربي والعالمي</button>
+          <button class="tabs__btn" data-tab="spa" data-i18n="services.spa.name">السبا ومركز العافية</button>
+          <button class="tabs__btn" data-tab="pool" data-i18n="services.pool.name">مسبح خارجي مدفأ</button>
+          <button class="tabs__btn" data-tab="fitness" data-i18n="services.gym.name">نادي رياضي متكامل</button>
+        </div>
+
+        <div class="tabs__content">
+          <!-- Tab 1: Dining -->
+          <div class="tabs__panel tabs__panel--active" id="tab-dining">
+            <div class="intro">
+              <div class="intro__img">
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=500&fit=crop&q=80" alt="مطعم فندق الضيافة" loading="lazy">
+              </div>
+              <div class="intro__content">
+                <h3 class="intro__title" data-i18n="services.restaurant.name">المطعم العربي والعالمي</h3>
+                <p class="intro__text" data-i18n="services.restaurant.desc">تجارب تذوق لا مثيل لها وبوفيه مفتوح يومي يقدم أشهى الأطباق المحضرة بأيدي طهاة عالميين.</p>
+                <ul style="margin-bottom: var(--space-lg); line-height: 2;">
+                  <li><i class="fas fa-check-circle" style="color: var(--clr-primary); margin-inline-end: 0.5rem;"></i> بوفيه إفطار عالمي غني يومياً من 6:30 إلى 11:00 صباحاً</li>
+                  <li><i class="fas fa-check-circle" style="color: var(--clr-primary); margin-inline-end: 0.5rem;"></i> أركان حية للطبخ الشرقي والمشويات والمأكولات البحرية</li>
+                  <li><i class="fas fa-check-circle" style="color: var(--clr-primary); margin-inline-end: 0.5rem;"></i> غرف طعام خاصة للعائلات ورجال الأعمال</li>
+                </ul>
+                <a href="contact.html" class="btn btn--primary">حجز طاولة</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Spa -->
+          <div class="tabs__panel" id="tab-spa">
+            <div class="intro">
+              <div class="intro__img">
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbec6d?w=800&h=500&fit=crop&q=80" alt="مركز السبا" loading="lazy">
+              </div>
+              <div class="intro__content">
+                <h3 class="intro__title" data-i18n="services.spa.name">السبا ومركز العافية</h3>
+                <p class="intro__text" data-i18n="services.spa.desc">جلسات تدليك وعلاجات استرخاء طبيعية لإعادة الحيوية والنشاط لجسدك وذهنك.</p>
+                <ul style="margin-bottom: var(--space-lg); line-height: 2;">
+                  <li><i class="fas fa-check-circle" style="color: var(--clr-primary); margin-inline-end: 0.5rem;"></i> حمام مغربي تقليدي وجلسات ساونا وبخار متكاملة</li>
+                  <li><i class="fas fa-check-circle" style="color: var(--clr-primary); margin-inline-end: 0.5rem;"></i> جلسات مساج استرخائي ومساج علاجي بأيدي محترفين</li>
+                  <li><i class="fas fa-check-circle" style="color: var(--clr-primary); margin-inline-end: 0.5rem;"></i> أقسام منفصلة للرجال والنساء تضمن أعلى درجات الخصوصية</li>
+                </ul>
+                <a href="contact.html" class="btn btn--primary">حجز جلسة سبا</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Pool -->
+          <div class="tabs__panel" id="tab-pool">
+            <div class="intro">
+              <div class="intro__img">
+                <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&h=500&fit=crop&q=80" alt="المسبح الخارجي" loading="lazy">
+              </div>
+              <div class="intro__content">
+                <h3 class="intro__title" data-i18n="services.pool.name">مسبح خارجي مدفأ</h3>
+                <p class="intro__text" data-i18n="services.pool.desc">استمتع بالسباحة والاسترخاء تحت أشعة الشمس مع إطلالة مفتوحة ومشروبات منعشة.</p>
+                <ul style="margin-bottom: var(--space-lg); line-height: 2;">
+                  <li><i class="fas fa-check-circle" style="color: var(--clr-primary); margin-inline-end: 0.5rem;"></i> نظام تدفئة متطور يضمن حرارة مثالية طوال العام</li>
+                  <li><i class="fas fa-check-circle" style="color: var(--clr-primary); margin-inline-end: 0.5rem;"></i> بار عصائر ومأكولات خفيفة بجانب المسبح</li>
+                  <li><i class="fas fa-check-circle" style="color: var(--clr-primary); margin-inline-end: 0.5rem;"></i> منطقة مخصصة وآمنة للأطفال بإشراف منقذين معتمدين</li>
+                </ul>
+                <a href="contact.html" class="btn btn--primary">استفسر عن المسبح</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4: Fitness -->
+          <div class="tabs__panel" id="tab-fitness">
+            <div class="intro">
+              <div class="intro__img">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=500&fit=crop&q=80" alt="الصالة الرياضية" loading="lazy">
+              </div>
+              <div class="intro__content">
+                <h3 class="intro__title" data-i18n="services.gym.name">نادي رياضي متكامل</h3>
+                <p class="intro__text" data-i18n="services.gym.desc">أحدث المعدات الرياضية وأجهزة اللياقة البدنية بإشراف مدربين مؤهلين.</p>
+                <ul style="margin-bottom: var(--space-lg); line-height: 2;">
+                  <li><i class="fas fa-check-circle" style="color: var(--clr-primary); margin-inline-end: 0.5rem;"></i> أجهزة كارديو وأوزان حرة من أرقى العلامات العالمية</li>
+                  <li><i class="fas fa-check-circle" style="color: var(--clr-primary); margin-inline-end: 0.5rem;"></i> متاح 24 ساعة يومياً لنزلاء الفندق مجاناً</li>
+                  <li><i class="fas fa-check-circle" style="color: var(--clr-primary); margin-inline-end: 0.5rem;"></i> مدربين شخصيين للمساعدة في تصميم برامج تدريبية مخصصة</li>
+                </ul>
+                <a href="contact.html" class="btn btn--primary">تواصل معنا</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-section" style="background-image: url('https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1920&q=80&fit=crop');">
+    <div class="container reveal">
+      <h2 class="cta-section__title" data-i18n="cta.title">هل أنت مستعد لتجربة ضيافة لا تُنسى؟</h2>
+      <p class="cta-section__text" data-i18n="cta.text">احجز إقامتك الآن بأفضل الأسعار المضمونة واستمتع بخدماتنا الحصرية.</p>
+      <a href="rooms.html" class="btn btn--primary btn--lg" data-i18n="cta.button">احجز الآن مباشرة</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="general.hotel_name">فندق الضيافة</h3>
+        <p class="footer__text" data-i18n="footer.description">فندق الضيافة هو وجهتك المثالية لتجربة إقامة تجمع بين الفخامة المعاصرة والروح العربية الأصيلة.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="footer__social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.quick_links">روابط سريعة</h3>
+        <ul class="footer__links">
+          <li><a href="../index.html" class="footer__link" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="rooms.html" class="footer__link" data-i18n="nav.rooms">الغرف والأجنحة</a></li>
+          <li><a href="about.html" class="footer__link" data-i18n="nav.about">من نحن</a></li>
+          <li><a href="services.html" class="footer__link" data-i18n="nav.services">الخدمات</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.more_links">روابط إضافية</h3>
+        <ul class="footer__links">
+          <li><a href="gallery.html" class="footer__link" data-i18n="nav.gallery">معرض الصور</a></li>
+          <li><a href="contact.html" class="footer__link" data-i18n="nav.contact">تواصل معنا</a></li>
+          <li><a href="#" class="footer__link" data-i18n="footer.privacy">سياسة الخصوصية</a></li>
+          <li><a href="#" class="footer__link" data-i18n="footer.terms">الشروط والأحكام</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title" data-i18n="footer.contact_us">اتصل بنا</h3>
+        <div class="footer__contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span data-i18n="footer.address">شارع الملك فهد، الرياض</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+966 11 234 5678</span>
+        </div>
+        <div class="footer__contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@aldiyafa-hotel.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p data-i18n="footer.copyright">© 2026 فندق الضيافة. جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/navbar.js"></script>
+  <script src="../assets/js/slider.js"></script>
+  <script src="../assets/js/gallery.js"></script>
+  <script src="../assets/js/booking.js"></script>
+  <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
